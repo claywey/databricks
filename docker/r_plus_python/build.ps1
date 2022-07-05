@@ -7,4 +7,4 @@ param(
 docker build -t claywey/databricks_rpluspython:$version .
 
 # push image
-docker push claywey/databricks_rpluspython:$version
+# docker push claywey/databricks_rpluspython:$version

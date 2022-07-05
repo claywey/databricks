@@ -29,3 +29,6 @@ RUN /databricks/conda/bin/conda config --system --set channel_priority strict \
 # The second one is necessary so that the python notebook/repl can be started (won't work without it)
 ENV DEFAULT_DATABRICKS_ROOT_CONDA_ENV=dcs-minimal
 ENV DATABRICKS_ROOT_CONDA_ENV=dcs-minimal
+
+COPY install_mlflow.R install_mlflow.R
+RUN Rscript install_mlflow.R
